@@ -8,7 +8,7 @@ export default function Hero() {
       <p style={styles.location}>{resume.location}</p>
       <p style={styles.summary}>{resume.summary}</p>
       <div style={styles.actions}>
-        <a href="/Pratik_Sangle_Resume.pdf" download style={styles.btn}>Download Resume</a>
+        <a href={`${import.meta.env.BASE_URL}Pratik_Sangle_Resume.pdf`} download style={styles.btn}>Download Resume</a>
         <a href="#contact" style={{ ...styles.btn, ...styles.outline }}>Contact Me</a>
       </div>
     </section>
